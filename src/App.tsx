@@ -85,7 +85,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-50 via-slate-50 to-stone-50 dark:from-zinc-950 dark:via-slate-950 dark:to-stone-950">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <section className="relative mb-20 pt-12 md:pt-20">
+        <section className="relative mb-8 pt-12 md:pt-20">
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 rounded-3xl blur-3xl"></div>
           <div className="relative">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-6">
@@ -113,13 +113,37 @@ function App() {
                   </p>
                 </div>
                 
-                <div className={`flex flex-wrap gap-3 justify-center md:justify-start transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`flex flex-wrap items-center gap-4 justify-center md:justify-start transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                   <span className="inline-block px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full text-sm font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 transition-all">
                     Backend-focused PHP Developer
                   </span>
-                  <span className="inline-block px-5 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full text-sm font-semibold shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/40 transition-all">
-                    FullStack Developer
-                  </span>
+                  <div className="flex gap-3">
+                    <a href="https://t.me/teagamesen" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors" aria-label="Telegram">
+                      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                      </svg>
+                    </a>
+                    <a href="mailto:warlikelaux080399@mail.ru" className="text-slate-600 dark:text-slate-400 hover:text-rose-500 dark:hover:text-rose-400 transition-colors" aria-label="Email">
+                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </a>
+                    <a href="https://github.com/WarLikeLaux" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-purple-500 dark:hover:text-purple-400 transition-colors" aria-label="GitHub">
+                      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <a href="https://www.codewars.com/users/WarLikeLaux" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-400 transition-colors" aria-label="Codewars">
+                      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                      </svg>
+                    </a>
+                    <a href="https://ru.stackoverflow.com/users/394231/warlikelaux" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" aria-label="Stack Overflow">
+                      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M15.292 19.925l-3.217-3.211L13.507 15l3.211 3.212-1.426 1.713zM19.855 13.646l-1.431-1.43 3.212-3.213 1.43 1.43-3.211 3.213zM12.97 3.627l-1.43 1.43-3.212 3.212 1.43 1.43 3.212-3.212zm4.283 4.282l-1.43 1.43-3.212-3.211 1.43-1.431 3.212 3.212zm2.567 1.64c0-.15-.012-.302-.037-.453l-2.115-2.114-1.43 1.43 2.114 2.115c.14.025.293.037.443.037.828 0 1.5-.672 1.5-1.5 0-.15-.012-.302-.037-.452l2.115-2.115-1.43-1.43-2.115 2.114c-.14-.025-.293-.037-.443-.037-.828 0-1.5.672-1.5 1.5 0 .15.012.302.037.453l-2.115 2.114 1.43 1.43 2.114-2.115c.14.025.293.037.443.037.828 0 1.5-.672 1.5-1.5zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
               
@@ -156,144 +180,158 @@ function App() {
           </div>
         </section>
 
-        <section className="mb-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
-            <a href="https://t.me/teagamesen" target="_blank" rel="noopener noreferrer" className={`group relative overflow-hidden bg-gradient-to-br from-sky-400 via-blue-500 to-cyan-500 dark:from-sky-600 dark:via-blue-600 dark:to-cyan-600 rounded-2xl p-4 border-2 border-sky-300/70 dark:border-sky-400/70 hover:border-sky-200 dark:hover:border-sky-300 transition-all hover:shadow-2xl hover:shadow-sky-500/40 hover:scale-[1.02] flex flex-col items-center justify-center gap-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '200ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-sky-300/20 to-cyan-300/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <svg className="relative w-8 h-8 text-white transform group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-              </svg>
-              <span className="relative text-base font-black text-white tracking-wide">Telegram</span>
-            </a>
-            
-            <a href="mailto:warlikelaux080399@mail.ru" className={`group relative overflow-hidden bg-gradient-to-br from-rose-400 via-pink-500 to-red-500 dark:from-rose-600 dark:via-pink-600 dark:to-red-600 rounded-2xl p-4 border-2 border-rose-300/70 dark:border-rose-400/70 hover:border-rose-200 dark:hover:border-rose-300 transition-all hover:shadow-2xl hover:shadow-rose-500/40 hover:scale-[1.02] flex flex-col items-center justify-center gap-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '300ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-rose-300/20 to-red-300/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <svg className="relative w-8 h-8 text-white transform group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <span className="relative text-base font-black text-white tracking-wide">Email</span>
-            </a>
-            
-            <a href="https://github.com/WarLikeLaux" target="_blank" rel="noopener noreferrer" className={`group relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-600 dark:via-purple-600 dark:to-pink-600 rounded-2xl p-4 border-2 border-purple-300/70 dark:border-purple-400/70 hover:border-purple-200 dark:hover:border-purple-300 transition-all hover:shadow-2xl hover:shadow-purple-500/40 hover:scale-[1.02] flex flex-col items-center justify-center gap-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '400ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/20 to-pink-400/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <svg className="relative w-8 h-8 text-white transform group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-              </svg>
-              <span className="relative text-base font-black text-white tracking-wide">GitHub</span>
-            </a>
-            
-            <a href="https://www.codewars.com/users/WarLikeLaux" target="_blank" rel="noopener noreferrer" className={`group relative overflow-hidden bg-gradient-to-br from-red-600 via-orange-600 to-amber-600 dark:from-red-700 dark:via-orange-700 dark:to-amber-700 rounded-2xl p-4 border-2 border-red-400/60 dark:border-red-500/60 hover:border-red-300 dark:hover:border-red-400 transition-all hover:shadow-2xl hover:shadow-red-500/40 hover:scale-[1.02] flex flex-col items-center justify-center gap-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '500ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-amber-500/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <svg className="relative w-8 h-8 text-white transform group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                <path d="M12 2v20c5.16-1.26 9-6.45 9-12V7l-9-5z" fill="currentColor" opacity="0.3"/>
-              </svg>
-              <span className="relative text-base font-black text-white tracking-wide">Codewars</span>
-            </a>
-            
-            <div className={`group relative overflow-hidden bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 dark:from-emerald-900/30 dark:via-teal-900/30 dark:to-cyan-900/30 backdrop-blur-md rounded-3xl p-5 border-2 border-emerald-400/60 dark:border-emerald-600/60 hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-2xl hover:shadow-emerald-500/20 transition-all col-span-2 md:col-span-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '600ms' }}>
-              <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-400/10 rounded-bl-full blur-2xl group-hover:bg-emerald-400/20 transition-colors"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyan-400/10 rounded-tr-full blur-2xl group-hover:bg-cyan-400/20 transition-colors"></div>
+        <section className="mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mb-6">
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-purple-500/30 via-pink-500/30 to-rose-500/30 dark:from-purple-900/40 dark:via-pink-900/40 dark:to-rose-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-purple-400/70 dark:border-purple-500/70 hover:border-purple-300 dark:hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '200ms' }}>
+              <div className="absolute top-0 right-0 w-24 h-24 bg-purple-400/20 rounded-bl-full blur-2xl group-hover:bg-purple-400/30 transition-colors"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-rose-400/20 rounded-tr-full blur-2xl group-hover:bg-rose-400/30 transition-colors"></div>
               <div className="relative">
                 <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                   </svg>
                   Backend
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-emerald-500/30 text-emerald-900 dark:text-emerald-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">PHP 8.4</span>
-                  <span className="px-3 py-2 bg-teal-500/30 text-teal-900 dark:text-teal-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Yii2</span>
-                  <span className="px-3 py-2 bg-cyan-500/30 text-cyan-900 dark:text-cyan-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Laravel</span>
-                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Python</span>
-                  <span className="px-3 py-2 bg-sky-500/30 text-sky-900 dark:text-sky-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">FastAPI</span>
+                  <span className="px-3 py-2 bg-purple-500/40 text-purple-900 dark:text-purple-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">PHP 8.4</span>
+                  <span className="px-3 py-2 bg-pink-500/40 text-pink-900 dark:text-pink-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Yii2</span>
+                  <span className="px-3 py-2 bg-rose-500/40 text-rose-900 dark:text-rose-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Laravel</span>
                 </div>
               </div>
             </div>
             
-            <div className={`group relative overflow-hidden bg-gradient-to-br from-teal-500/20 via-cyan-500/20 to-blue-500/20 dark:from-teal-900/30 dark:via-cyan-900/30 dark:to-blue-900/30 backdrop-blur-md rounded-3xl p-5 border-2 border-teal-400/60 dark:border-teal-600/60 hover:border-teal-500 dark:hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-500/20 transition-all col-span-2 md:col-span-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '700ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-r from-teal-400/5 via-cyan-400/5 to-blue-400/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-blue-500/30 via-indigo-500/30 to-purple-500/30 dark:from-blue-900/40 dark:via-indigo-900/40 dark:to-purple-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-blue-400/70 dark:border-blue-500/70 hover:border-blue-300 dark:hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '300ms' }}>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 via-indigo-400/10 to-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative">
                 <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                   Базы данных
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-teal-500/30 text-teal-900 dark:text-teal-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">MySQL</span>
-                  <span className="px-3 py-2 bg-rose-500/30 text-rose-900 dark:text-rose-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Redis</span>
-                  <span className="px-3 py-2 bg-amber-500/30 text-amber-900 dark:text-amber-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">RabbitMQ</span>
-                  <span className="px-3 py-2 bg-cyan-500/30 text-cyan-900 dark:text-cyan-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Elasticsearch</span>
+                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">MySQL</span>
+                  <span className="px-3 py-2 bg-indigo-500/30 text-indigo-900 dark:text-indigo-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Redis</span>
+                  <span className="px-3 py-2 bg-purple-500/30 text-purple-900 dark:text-purple-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">RabbitMQ</span>
+                  <span className="px-3 py-2 bg-violet-500/30 text-violet-900 dark:text-violet-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Elasticsearch</span>
                 </div>
               </div>
             </div>
             
-            <a href="https://github.com/WarLikeLaux/yii2-book-catalog" target="_blank" rel="noopener noreferrer" className={`group relative overflow-hidden bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 dark:from-emerald-900/30 dark:via-teal-900/30 dark:to-cyan-900/30 backdrop-blur-md rounded-3xl p-5 border-2 border-emerald-300/50 dark:border-emerald-700/50 hover:border-emerald-400 dark:hover:border-emerald-600 hover:shadow-2xl transition-all hover:scale-[1.02] col-span-2 md:col-span-2 cursor-pointer ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '800ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative">
-                <div className="text-2xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent group-hover:from-emerald-500 group-hover:to-teal-500 transition-all inline-block mb-3">
-                  yii2-book-catalog
-                </div>
-                <div className="flex gap-2 mb-3 flex-wrap">
-                  <span className="px-3 py-1.5 bg-emerald-500/30 text-emerald-800 dark:text-emerald-200 rounded-xl text-sm font-bold">100% Coverage</span>
-                  <span className="px-3 py-1.5 bg-teal-500/30 text-teal-800 dark:text-teal-200 rounded-xl text-sm font-bold">Clean Arch</span>
-                  <span className="px-3 py-1.5 bg-cyan-500/30 text-cyan-800 dark:text-cyan-200 rounded-xl text-sm font-bold">DDD + CQRS</span>
-                </div>
-                <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
-                  Реализация Clean Architecture на Yii2 с применением DDD и CQRS. Мультибаза данных, асинхронный поиск через Elasticsearch, HTMX для интерактивности.
-                </p>
-              </div>
-            </a>
-            
-            <div className={`group relative overflow-hidden bg-gradient-to-br from-blue-500/20 via-sky-500/20 to-cyan-500/20 dark:from-blue-900/30 dark:via-sky-900/30 dark:to-cyan-900/30 backdrop-blur-md rounded-3xl p-5 border-2 border-blue-400/60 dark:border-blue-600/60 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20 transition-all col-span-2 md:col-span-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '900ms' }}>
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-400/10 to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-cyan-500/30 via-blue-500/30 to-teal-500/30 dark:from-cyan-900/40 dark:via-blue-900/40 dark:to-teal-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-cyan-400/70 dark:border-cyan-500/70 hover:border-cyan-300 dark:hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '400ms' }}>
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/15 to-blue-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative">
                 <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  Frontend
-                </h3>
-                <div className="flex flex-col gap-2">
-                  <span className="px-3 py-2 bg-emerald-500/30 text-emerald-900 dark:text-emerald-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Vue.js 3</span>
-                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">TypeScript</span>
-                  <span className="px-3 py-2 bg-cyan-500/30 text-cyan-900 dark:text-cyan-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">React</span>
-                  <span className="px-3 py-2 bg-teal-500/30 text-teal-900 dark:text-teal-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">HTMX</span>
-                </div>
-              </div>
-            </div>
-            
-            <a href="https://leetcode.com/u/WarLikeLaux/" target="_blank" rel="noopener noreferrer" className={`group relative overflow-hidden bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-400 dark:from-yellow-500 dark:via-amber-500 dark:to-orange-500 rounded-2xl p-4 border-2 border-yellow-300/70 dark:border-yellow-400/70 hover:border-yellow-200 dark:hover:border-yellow-300 transition-all hover:shadow-2xl hover:shadow-yellow-500/40 hover:scale-[1.02] flex flex-col items-center justify-center gap-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '1000ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-300/20 to-orange-300/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <svg className="relative w-8 h-8 text-slate-900 dark:text-slate-900 transform group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.557c-.466-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.319c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365 1.365 1.365 2.002s-.85 1.486-1.365 2.001zm-1.365-2.002c-.467-.467-1.111-.662-1.823-.662s-1.357.195-1.824.662l-4.332 4.557c-.467.467-1.111.645-1.824.645s-1.357-.195-1.823-.662l-4.319-4.319c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.319c.467-.467 1.111-.645 1.824-.645s1.357.195 1.823.662l4.332 4.557c.467.467 1.111.662 1.823.662s1.357-.195 1.824-.662l2.697-2.606c.514-.515 1.365-1.365 1.365-2.002s-.85-1.486-1.365-2.001l-2.697-2.607c-.467-.467-1.111-.702-1.823-.702s-1.357.235-1.824.702l-4.332 4.557c-.467.467-.702 1.15-.702 1.863s.235 1.357.702 1.824l4.319 4.319c.467.467 1.111.645 1.824.645s1.357-.195 1.823-.662l4.332-4.557c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365 1.365 1.365 2.002s-.85 1.486-1.365 2.001z"/>
-              </svg>
-              <span className="relative text-base font-black text-slate-900 dark:text-slate-900 tracking-wide">LeetCode</span>
-            </a>
-            
-            <a href="https://ru.stackoverflow.com/users/394231/warlikelaux" target="_blank" rel="noopener noreferrer" className={`group relative overflow-hidden bg-gradient-to-br from-orange-500 to-amber-500 dark:from-orange-600 dark:to-amber-600 rounded-2xl p-4 border-2 border-orange-400/70 dark:border-orange-500/70 hover:border-orange-300 dark:hover:border-orange-400 transition-all hover:shadow-2xl hover:shadow-orange-500/40 hover:scale-[1.02] flex items-center justify-center gap-3 col-span-2 md:col-span-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '1100ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-400/20 to-amber-400/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <svg className="relative w-7 h-7 text-white transform group-hover:rotate-6 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M15.292 19.925l-3.217-3.211L13.507 15l3.211 3.212-1.426 1.713zM19.855 13.646l-1.431-1.43 3.212-3.213 1.43 1.43-3.211 3.213zM12.97 3.627l-1.43 1.43-3.212 3.212 1.43 1.43 3.212-3.212zm4.283 4.282l-1.43 1.43-3.212-3.211 1.43-1.431 3.212 3.212zm2.567 1.64c0-.15-.012-.302-.037-.453l-2.115-2.114-1.43 1.43 2.114 2.115c.14.025.293.037.443.037.828 0 1.5-.672 1.5-1.5 0-.15-.012-.302-.037-.452l2.115-2.115-1.43-1.43-2.115 2.114c-.14-.025-.293-.037-.443-.037-.828 0-1.5.672-1.5 1.5 0 .15.012.302.037.453l-2.115 2.114 1.43 1.43 2.114-2.115c.14.025.293.037.443.037.828 0 1.5-.672 1.5-1.5zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"/>
-              </svg>
-              <span className="relative text-base font-black text-white tracking-wide">Stack Overflow</span>
-            </a>
-            
-            <div className={`group relative overflow-hidden bg-gradient-to-br from-stone-500/20 via-zinc-500/20 to-slate-500/20 dark:from-stone-800/30 dark:via-zinc-800/30 dark:to-slate-800/30 backdrop-blur-md rounded-3xl p-5 border-2 border-stone-400/60 dark:border-stone-600/60 hover:border-stone-500 dark:hover:border-stone-500 hover:shadow-2xl hover:shadow-stone-500/20 transition-all col-span-2 md:col-span-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '1200ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-stone-400/10 to-slate-400/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative">
-                <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-stone-600 dark:text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                   </svg>
                   Инфраструктура
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Docker</span>
-                  <span className="px-3 py-2 bg-emerald-500/30 text-emerald-900 dark:text-emerald-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Nginx</span>
-                  <span className="px-3 py-2 bg-amber-500/30 text-amber-900 dark:text-amber-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Linux</span>
-                  <span className="px-3 py-2 bg-purple-500/30 text-purple-900 dark:text-purple-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">CI/CD</span>
+                  <span className="px-3 py-2 bg-cyan-500/40 text-cyan-900 dark:text-cyan-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Docker</span>
+                  <span className="px-3 py-2 bg-blue-500/40 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Nginx</span>
+                  <span className="px-3 py-2 bg-teal-500/40 text-teal-900 dark:text-teal-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Linux</span>
+                  <span className="px-3 py-2 bg-sky-500/40 text-sky-900 dark:text-sky-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className={`group relative overflow-hidden bg-gradient-to-br from-emerald-500/30 via-teal-500/30 to-cyan-500/30 dark:from-emerald-900/40 dark:via-teal-900/40 dark:to-cyan-900/40 backdrop-blur-md rounded-3xl p-8 border-2 border-emerald-400/70 dark:border-emerald-500/70 hover:border-emerald-300 dark:hover:border-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/30 transition-all mb-6 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '500ms' }}>
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/15 to-teal-500/15 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="flex items-start justify-between gap-4 mb-4 flex-wrap">
+                <div className="flex-1">
+                  <div className="text-3xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent group-hover:from-emerald-500 group-hover:to-teal-500 transition-all inline-block mb-4">
+                    yii2-book-catalog
+                  </div>
+                  <div className="flex gap-2 mb-4 flex-wrap">
+                    <span className="px-3 py-1.5 bg-emerald-500/30 text-emerald-800 dark:text-emerald-200 rounded-xl text-sm font-bold">100% Coverage</span>
+                    <span className="px-3 py-1.5 bg-teal-500/30 text-teal-800 dark:text-teal-200 rounded-xl text-sm font-bold">100% MSI</span>
+                    <span className="px-3 py-1.5 bg-cyan-500/30 text-cyan-800 dark:text-cyan-200 rounded-xl text-sm font-bold">Clean Architecture</span>
+                    <span className="px-3 py-1.5 bg-blue-500/30 text-blue-800 dark:text-blue-200 rounded-xl text-sm font-bold">DDD + CQRS</span>
+                    <span className="px-3 py-1.5 bg-purple-500/30 text-purple-800 dark:text-purple-200 rounded-xl text-sm font-bold">Highload ready</span>
+                  </div>
+                </div>
+                <a href="https://github.com/WarLikeLaux/yii2-book-catalog" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-white rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                  </svg>
+                  <span>Посмотреть код</span>
+                </a>
+              </div>
+              <ul className="space-y-2 text-lg text-slate-700 dark:text-slate-400">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-emerald-500 dark:text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Реализация Clean Architecture с четким разделением слоев и изоляцией бизнес-логики</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-emerald-500 dark:text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Гибридный поиск: FullText MySQL с откатом к LIKE для надежности</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-emerald-500 dark:text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Мультибаза данных (MySQL/PostgreSQL) с поддержкой транзакций</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-emerald-500 dark:text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Async Fan-out паттерн для масштабируемых уведомлений через доменные события</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-emerald-500 dark:text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>CAS Storage (Content-Addressable Storage) для файлов и Value Objects для бизнес-правил</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-emerald-500 dark:text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>PJAX для мгновенной фильтрации и HTMX для интерактивности без перезагрузки</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-blue-500/30 via-sky-500/30 to-cyan-500/30 dark:from-blue-900/40 dark:via-sky-900/40 dark:to-cyan-900/40 backdrop-blur-md rounded-3xl p-5 border-2 border-blue-400/70 dark:border-blue-500/70 hover:border-blue-300 dark:hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '600ms' }}>
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-400/15 to-cyan-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <h3 className="font-black text-lg mb-3 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  Frontend
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-2 bg-emerald-500/30 text-emerald-900 dark:text-emerald-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Vue.js 3</span>
+                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">TypeScript</span>
+                  <span className="px-3 py-2 bg-cyan-500/30 text-cyan-900 dark:text-cyan-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">React</span>
+                  <span className="px-3 py-2 bg-teal-500/30 text-teal-900 dark:text-teal-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">HTMX</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-slate-500/30 via-gray-500/30 to-zinc-500/30 dark:from-slate-800/40 dark:via-gray-800/40 dark:to-zinc-800/40 backdrop-blur-md rounded-3xl p-5 border-2 border-slate-400/70 dark:border-slate-500/70 hover:border-slate-300 dark:hover:border-slate-400 hover:shadow-2xl hover:shadow-slate-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '700ms' }}>
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-400/15 to-gray-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <h3 className="font-black text-lg mb-3 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                  Дополнительные навыки
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Python</span>
+                  <span className="px-3 py-2 bg-sky-500/30 text-sky-900 dark:text-sky-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">FastAPI</span>
                 </div>
               </div>
             </div>
