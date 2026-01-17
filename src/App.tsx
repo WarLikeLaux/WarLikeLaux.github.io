@@ -89,16 +89,16 @@ function App() {
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 rounded-3xl blur-3xl"></div>
           <div className="relative">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-6">
-              <div className={`flex-shrink-0 transition-all duration-1000 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+              <a href="https://t.me/teagamesen" target="_blank" rel="noopener noreferrer" className={`flex-shrink-0 transition-all duration-1000 hover:scale-105 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
                   <img 
                     src="https://avatars.githubusercontent.com/u/48706973?v=4" 
                     alt="Евгений Федотов"
-                    className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white dark:border-slate-800 shadow-2xl object-cover"
+                    className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white dark:border-slate-800 shadow-2xl object-cover cursor-pointer"
                   />
                 </div>
-              </div>
+              </a>
               
               <div className="flex-1 text-center md:text-left">
                 <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -114,9 +114,9 @@ function App() {
                 </div>
                 
                 <div className={`flex flex-wrap items-center gap-4 justify-center md:justify-start transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="inline-block px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full text-sm font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 transition-all">
+                  <a href="https://t.me/teagamesen" target="_blank" rel="noopener noreferrer" className="inline-block px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full text-sm font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 transition-all hover:scale-105 cursor-pointer">
                     Backend-focused PHP Developer
-                  </span>
+                  </a>
                   <div className="flex gap-3">
                     <a href="https://t.me/teagamesen" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors" aria-label="Telegram">
                       <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
@@ -186,16 +186,17 @@ function App() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-purple-400/20 rounded-bl-full blur-2xl group-hover:bg-purple-400/30 transition-colors"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-rose-400/20 rounded-tr-full blur-2xl group-hover:bg-rose-400/30 transition-colors"></div>
               <div className="relative">
-                <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <h3 className="font-black text-2xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
                   <svg className="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                   </svg>
                   Backend
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-purple-500/40 text-purple-900 dark:text-purple-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">PHP 8.4</span>
-                  <span className="px-3 py-2 bg-pink-500/40 text-pink-900 dark:text-pink-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Yii2</span>
-                  <span className="px-3 py-2 bg-rose-500/40 text-rose-900 dark:text-rose-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Laravel</span>
+                  <span className="px-2.5 py-1.5 bg-purple-500/40 text-purple-900 dark:text-purple-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">PHP</span>
+                  <span className="px-2.5 py-1.5 bg-pink-500/40 text-pink-900 dark:text-pink-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Yii2</span>
+                  <span className="px-2.5 py-1.5 bg-rose-500/40 text-rose-900 dark:text-rose-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Laravel</span>
+                  <span className="px-2.5 py-1.5 bg-amber-500/40 text-amber-900 dark:text-amber-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">RabbitMQ</span>
                 </div>
               </div>
             </div>
@@ -203,17 +204,16 @@ function App() {
             <div className={`group relative overflow-hidden bg-gradient-to-br from-blue-500/30 via-indigo-500/30 to-purple-500/30 dark:from-blue-900/40 dark:via-indigo-900/40 dark:to-purple-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-blue-400/70 dark:border-blue-500/70 hover:border-blue-300 dark:hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '300ms' }}>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 via-indigo-400/10 to-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative">
-                <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <h3 className="font-black text-2xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
                   <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                   Базы данных
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">MySQL</span>
-                  <span className="px-3 py-2 bg-indigo-500/30 text-indigo-900 dark:text-indigo-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Redis</span>
-                  <span className="px-3 py-2 bg-purple-500/30 text-purple-900 dark:text-purple-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">RabbitMQ</span>
-                  <span className="px-3 py-2 bg-violet-500/30 text-violet-900 dark:text-violet-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Elasticsearch</span>
+                  <span className="px-2.5 py-1.5 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">MySQL</span>
+                  <span className="px-2.5 py-1.5 bg-indigo-500/30 text-indigo-900 dark:text-indigo-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Redis</span>
+                  <span className="px-2.5 py-1.5 bg-violet-500/30 text-violet-900 dark:text-violet-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Elasticsearch</span>
                 </div>
               </div>
             </div>
@@ -221,17 +221,17 @@ function App() {
             <div className={`group relative overflow-hidden bg-gradient-to-br from-cyan-500/30 via-blue-500/30 to-teal-500/30 dark:from-cyan-900/40 dark:via-blue-900/40 dark:to-teal-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-cyan-400/70 dark:border-cyan-500/70 hover:border-cyan-300 dark:hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '400ms' }}>
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/15 to-blue-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative">
-                <h3 className="font-black text-xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <h3 className="font-black text-2xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
                   <svg className="w-5 h-5 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                   </svg>
                   Инфраструктура
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-cyan-500/40 text-cyan-900 dark:text-cyan-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Docker</span>
-                  <span className="px-3 py-2 bg-blue-500/40 text-blue-900 dark:text-blue-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Nginx</span>
-                  <span className="px-3 py-2 bg-teal-500/40 text-teal-900 dark:text-teal-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">Linux</span>
-                  <span className="px-3 py-2 bg-sky-500/40 text-sky-900 dark:text-sky-100 rounded-xl text-base font-bold shadow-sm hover:shadow-md transition-shadow">CI/CD</span>
+                  <span className="px-2.5 py-1.5 bg-cyan-500/40 text-cyan-900 dark:text-cyan-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Docker</span>
+                  <span className="px-2.5 py-1.5 bg-blue-500/40 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Nginx</span>
+                  <span className="px-2.5 py-1.5 bg-teal-500/40 text-teal-900 dark:text-teal-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Linux</span>
+                  <span className="px-2.5 py-1.5 bg-sky-500/40 text-sky-900 dark:text-sky-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">CI/CD</span>
                 </div>
               </div>
             </div>
@@ -301,37 +301,53 @@ function App() {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-            <div className={`group relative overflow-hidden bg-gradient-to-br from-blue-500/30 via-sky-500/30 to-cyan-500/30 dark:from-blue-900/40 dark:via-sky-900/40 dark:to-cyan-900/40 backdrop-blur-md rounded-3xl p-5 border-2 border-blue-400/70 dark:border-blue-500/70 hover:border-blue-300 dark:hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '600ms' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-blue-500/30 via-sky-500/30 to-cyan-500/30 dark:from-blue-900/40 dark:via-sky-900/40 dark:to-cyan-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-blue-400/70 dark:border-blue-500/70 hover:border-blue-300 dark:hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '600ms' }}>
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-400/15 to-cyan-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative">
-                <h3 className="font-black text-lg mb-3 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <h3 className="font-black text-2xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
                   <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   Frontend
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-emerald-500/30 text-emerald-900 dark:text-emerald-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Vue.js 3</span>
-                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">TypeScript</span>
-                  <span className="px-3 py-2 bg-cyan-500/30 text-cyan-900 dark:text-cyan-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">React</span>
-                  <span className="px-3 py-2 bg-teal-500/30 text-teal-900 dark:text-teal-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">HTMX</span>
+                  <span className="px-2.5 py-1.5 bg-emerald-500/30 text-emerald-900 dark:text-emerald-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Vue.js 3</span>
+                  <span className="px-2.5 py-1.5 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">TypeScript</span>
+                  <span className="px-2.5 py-1.5 bg-cyan-500/30 text-cyan-900 dark:text-cyan-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">React</span>
+                  <span className="px-2.5 py-1.5 bg-teal-500/30 text-teal-900 dark:text-teal-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">HTMX</span>
                 </div>
               </div>
             </div>
             
-            <div className={`group relative overflow-hidden bg-gradient-to-br from-slate-500/30 via-gray-500/30 to-zinc-500/30 dark:from-slate-800/40 dark:via-gray-800/40 dark:to-zinc-800/40 backdrop-blur-md rounded-3xl p-5 border-2 border-slate-400/70 dark:border-slate-500/70 hover:border-slate-300 dark:hover:border-slate-400 hover:shadow-2xl hover:shadow-slate-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '700ms' }}>
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-pink-500/30 via-rose-500/30 to-fuchsia-500/30 dark:from-pink-900/40 dark:via-rose-900/40 dark:to-fuchsia-900/40 backdrop-blur-md rounded-3xl p-6 border-2 border-pink-400/70 dark:border-pink-500/70 hover:border-pink-300 dark:hover:border-pink-400 hover:shadow-2xl hover:shadow-pink-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '650ms' }}>
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-400/15 to-rose-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative">
+                <h3 className="font-black text-2xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-pink-600 dark:text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                  </svg>
+                  CSS
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2.5 py-1.5 bg-pink-500/40 text-pink-900 dark:text-pink-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Bootstrap 4/5</span>
+                  <span className="px-2.5 py-1.5 bg-rose-500/40 text-rose-900 dark:text-rose-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Tailwind</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className={`group relative overflow-hidden bg-gradient-to-br from-slate-500/30 via-gray-500/30 to-zinc-500/30 dark:from-slate-800/40 dark:via-gray-800/40 dark:to-zinc-800/40 backdrop-blur-md rounded-3xl p-6 border-2 border-slate-400/70 dark:border-slate-500/70 hover:border-slate-300 dark:hover:border-slate-400 hover:shadow-2xl hover:shadow-slate-500/30 transition-all ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '700ms' }}>
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400/15 to-gray-400/15 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative">
-                <h3 className="font-black text-lg mb-3 text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <h3 className="font-black text-2xl mb-4 text-slate-800 dark:text-slate-200 flex items-center gap-2">
                   <svg className="w-5 h-5 text-slate-600 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                   </svg>
-                  Дополнительные навыки
+                  Доп. навыки
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-2 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Python</span>
-                  <span className="px-3 py-2 bg-sky-500/30 text-sky-900 dark:text-sky-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">FastAPI</span>
+                  <span className="px-2.5 py-1.5 bg-blue-500/30 text-blue-900 dark:text-blue-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">Python</span>
+                  <span className="px-2.5 py-1.5 bg-sky-500/30 text-sky-900 dark:text-sky-100 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-shadow">FastAPI</span>
                 </div>
               </div>
             </div>
