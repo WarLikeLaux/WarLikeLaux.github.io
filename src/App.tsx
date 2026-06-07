@@ -178,29 +178,24 @@ function App() {
           <Reveal>
             <Heading id="projects">projects</Heading>
 
-            <div className={`rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-8 ${CARD_GLOW}`}>
+            <a
+              href={PROJECT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group block rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-8 ${CARD_GLOW}`}
+            >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div>
-                  <a
-                    href={PROJECT_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-xl font-semibold text-zinc-50 transition-colors hover:text-emerald-400"
-                  >
+                  <span className="font-mono text-xl font-semibold text-zinc-50 transition-colors group-hover:text-emerald-400">
                     yii2-book-catalog
-                  </a>
+                  </span>
                   <p className="mt-2 text-sm text-zinc-500">
                     Показательный проект: как я делаю чистую архитектуру на Yii 2.
                   </p>
                 </div>
-                <a
-                  href={PROJECT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0 self-start rounded-md border border-zinc-700 px-3.5 py-2 font-mono text-xs text-zinc-300 transition-colors hover:border-emerald-500/50 hover:text-emerald-400"
-                >
+                <span className="shrink-0 self-start rounded-md border border-zinc-700 px-3.5 py-2 font-mono text-xs text-zinc-300 transition-colors group-hover:border-emerald-500/50 group-hover:text-emerald-400">
                   GitHub →
-                </a>
+                </span>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
                 {PROJECT_TAGS.map((tag) => (
@@ -217,7 +212,7 @@ function App() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </a>
 
             <p className="mt-8 mb-5 font-mono text-xs uppercase tracking-wider text-zinc-600">
               ещё на github
