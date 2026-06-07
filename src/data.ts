@@ -39,7 +39,7 @@ export const PROJECT_POINTS = [
 ]
 
 export const OTHER_PROJECTS = [
-  { name: 'yii2-saas-sandbox', desc: 'стенд высоконагруженной SaaS-архитектуры на Yii2', lang: 'PHP', href: 'https://github.com/WarLikeLaux/yii2-saas-sandbox' },
+  { name: 'yii2-saas-sandbox', desc: 'стенд высоконагруженной SaaS-архитектуры', lang: 'PHP', href: 'https://github.com/WarLikeLaux/yii2-saas-sandbox' },
   { name: 'phew', desc: 'форматтер вьюшек Yii2', lang: 'Rust', href: 'https://github.com/WarLikeLaux/phew' },
   { name: 'strike-v', desc: 'трекер привычек', lang: 'Vue', href: 'https://github.com/WarLikeLaux/strike-v' },
   { name: 'leaas', desc: 'калькулятор стоимости жизни', lang: 'React', href: 'https://github.com/WarLikeLaux/leaas' },
