@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { type Stats } from './data'
 
 type Line = { prompt?: boolean; text: ReactNode }
@@ -40,24 +40,26 @@ export default function Terminal({ stats }: { stats: Stats }) {
   const inputRef = useRef<HTMLInputElement>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
 
+  const statsJson = useMemo(
+    () => [
+      '{',
+      `  "years_in_it":  ${stats.yearsInIT},`,
+      `  "years_in_dev": ${stats.yearsInDev},`,
+      `  "age":          ${stats.age},`,
+      `  "focus":        "backend",`,
+      `  "stack":        ["PHP", "Yii2", "Laravel"],`,
+      `  "remote":       true`,
+      '}',
+    ],
+    [stats],
+  )
+
   // boot sequence — печатает команды по буквам, выводит результат построчно
   useEffect(() => {
     let cancelled = false
     const steps = [
       { cmd: 'whoami', out: ['Евгений Федотов · PHP backend developer'] },
-      {
-        cmd: 'cat stats.json',
-        out: [
-          '{',
-          `  "years_in_it":  ${stats.yearsInIT},`,
-          `  "years_in_dev": ${stats.yearsInDev},`,
-          `  "age":          ${stats.age},`,
-          `  "focus":        "backend",`,
-          `  "stack":        ["PHP", "Yii2", "Laravel"],`,
-          `  "remote":       true`,
-          '}',
-        ],
-      },
+      { cmd: 'cat stats.json', out: statsJson },
     ]
 
     async function run() {
@@ -91,7 +93,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
     return () => {
       cancelled = true
     }
-  }, [stats])
+  }, [statsJson])
 
   useEffect(() => {
     const el = scrollRef.current
@@ -113,6 +115,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
       case 'help':
         push([
           'whoami     Кто я',
+          'stats      Статы',
           'telegram   Написать мне',
           'github     Мой код',
           'clear      Очистить экран',
@@ -120,6 +123,14 @@ export default function Terminal({ stats }: { stats: Stats }) {
         break
       case 'whoami':
         push(['Евгений Федотов · PHP backend developer'])
+        break
+      case 'stats':
+      case 'cat stats.json':
+      case 'cat stats':
+        push(statsJson)
+        break
+      case 'ls':
+        push(['stats.json'])
         break
       case 'telegram':
         push([<>→ {link('https://t.me/teagamesen', 't.me/teagamesen')}</>])
@@ -141,7 +152,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
     }
 
     setHistory((h) => [...h, ...out])
-  }, [])
+  }, [statsJson])
 
   return (
     <div
