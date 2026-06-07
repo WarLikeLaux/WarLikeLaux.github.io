@@ -5,10 +5,13 @@ type Line = { prompt?: boolean; text: ReactNode }
 
 const PROMPT = (
   <>
-    <span className="text-emerald-400">WarLikeLaux</span>
-    <span className="text-zinc-600">@</span>
-    <span className="text-sky-400">portfolio</span>
-    <span className="text-zinc-600">:~$</span>{' '}
+    <span className="hidden sm:inline">
+      <span className="text-emerald-400">WarLikeLaux</span>
+      <span className="text-zinc-600">@</span>
+      <span className="text-sky-400">portfolio</span>
+      <span className="text-zinc-600">:~</span>
+    </span>
+    <span className="text-emerald-400 sm:text-zinc-600">$</span>{' '}
   </>
 )
 
@@ -147,18 +150,18 @@ export default function Terminal({ stats }: { stats: Stats }) {
         <span className="h-3 w-3 rounded-full bg-red-500/80" />
         <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
         <span className="h-3 w-3 rounded-full bg-green-500/80" />
-        <span className="ml-2 font-mono text-xs text-zinc-500">WarLikeLaux@portfolio: ~</span>
+        <span className="ml-2 min-w-0 truncate font-mono text-xs text-zinc-500">WarLikeLaux@portfolio: ~</span>
       </div>
 
-      <div ref={scrollRef} className="h-72 overflow-y-auto p-5 font-mono text-sm leading-relaxed">
+      <div ref={scrollRef} className="h-72 overflow-x-hidden overflow-y-auto p-5 font-mono text-sm leading-relaxed">
         {history.map((line, i) => (
-          <p key={i} className={line.prompt ? 'text-zinc-200' : 'whitespace-pre-wrap break-words text-zinc-400'}>
+          <p key={i} className={line.prompt ? 'break-words text-zinc-200' : 'whitespace-pre-wrap break-words text-zinc-400'}>
             {line.prompt ? <>{PROMPT}{line.text}</> : line.text}
           </p>
         ))}
 
         {booting ? (
-          <p className="text-zinc-200">
+          <p className="break-words text-zinc-200">
             {PROMPT}{typed}
             <span className="cursor-blink text-emerald-400">▊</span>
           </p>
@@ -176,7 +179,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
               ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="ml-2 flex-1 bg-transparent text-zinc-200 caret-emerald-400 outline-none"
+              className="ml-2 min-w-0 flex-1 bg-transparent text-zinc-200 caret-emerald-400 outline-none"
               autoComplete="off"
               autoCapitalize="off"
               autoCorrect="off"
