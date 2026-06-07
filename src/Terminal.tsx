@@ -95,7 +95,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
   }, [history, typed])
 
   useEffect(() => {
-    if (!booting) inputRef.current?.focus()
+    if (!booting) inputRef.current?.focus({ preventScroll: true })
   }, [booting])
 
   const handleCommand = useCallback((raw: string) => {
@@ -148,7 +148,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
   return (
     <div
       className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 shadow-2xl shadow-black/40 transition-colors focus-within:border-zinc-700"
-      onClick={() => !booting && inputRef.current?.focus()}
+      onClick={() => !booting && inputRef.current?.focus({ preventScroll: true })}
     >
       <div className="flex items-center gap-2 border-b border-zinc-800 bg-zinc-900/80 px-4 py-3">
         <span className="h-3 w-3 rounded-full bg-red-500/80" />
