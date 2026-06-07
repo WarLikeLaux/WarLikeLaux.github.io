@@ -43,12 +43,11 @@ export default function Terminal({ stats }: { stats: Stats }) {
   const statsJson = useMemo(
     () => [
       '{',
-      `  "years_in_it":  ${stats.yearsInIT},`,
-      `  "years_in_dev": ${stats.yearsInDev},`,
-      `  "age":          ${stats.age},`,
-      `  "focus":        "backend",`,
-      `  "stack":        ["PHP", "Yii2", "Laravel"],`,
-      `  "remote":       true`,
+      `  "exp_it":  ${stats.yearsInIT},`,
+      `  "exp_dev": ${stats.yearsInDev},`,
+      `  "age":     ${stats.age},`,
+      `  "stack":   ["PHP", "Yii2", "Laravel"],`,
+      `  "remote":  true`,
       '}',
     ],
     [stats],
@@ -82,10 +81,6 @@ export default function Terminal({ stats }: { stats: Stats }) {
         await sleep(320)
       }
       if (cancelled) return
-      setHistory((h) => [
-        ...h,
-        { text: <span className="text-zinc-600">Введите <span className="text-zinc-300">help</span> — список команд</span> },
-      ])
       setBooting(false)
     }
 
@@ -145,10 +140,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
         push(['sudo: permission denied'])
         break
       default:
-        push([
-          <span className="text-rose-400">command not found: {cmd}</span>,
-          <span className="text-zinc-600">Введите help</span>,
-        ])
+        push([<span className="text-rose-400">command not found: {cmd}</span>])
     }
 
     setHistory((h) => [...h, ...out])
