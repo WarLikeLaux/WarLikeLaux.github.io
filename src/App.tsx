@@ -86,7 +86,7 @@ function App() {
       <main id="top" className="relative z-10 mx-auto max-w-6xl px-6">
 
         {/* hero */}
-        <section className="flex flex-col gap-10 py-16 md:flex-row md:items-center md:gap-12 md:py-24">
+        <section className="flex flex-col gap-10 py-12 md:flex-row md:items-center md:gap-12 md:py-16">
           <div className="flex-1">
             <p className="font-mono text-sm text-emerald-400">PHP backend developer</p>
             <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-zinc-50 md:text-6xl">
@@ -125,7 +125,7 @@ function App() {
         </section>
 
         {/* about */}
-        <section className="border-t border-zinc-900 py-16 md:py-20">
+        <section className="border-t border-zinc-900 py-12 md:py-14">
           <Reveal>
             <Heading id="about">about</Heading>
             <p className="max-w-3xl text-lg leading-relaxed text-zinc-400">
@@ -148,7 +148,7 @@ function App() {
         </section>
 
         {/* stack */}
-        <section className="border-t border-zinc-900 py-16 md:py-20">
+        <section className="border-t border-zinc-900 py-12 md:py-14">
           <Reveal>
             <Heading id="stack">stack</Heading>
             <div className="space-y-6">
@@ -174,7 +174,7 @@ function App() {
         </section>
 
         {/* projects */}
-        <section className="border-t border-zinc-900 py-16 md:py-20">
+        <section className="border-t border-zinc-900 py-12 md:py-14">
           <Reveal>
             <Heading id="projects">projects</Heading>
 
