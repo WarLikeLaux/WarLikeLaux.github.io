@@ -54,7 +54,7 @@ export default function Terminal({ stats }: { stats: Stats }) {
           `  "age":          ${stats.age},`,
           `  "focus":        "backend",`,
           `  "stack":        ["PHP", "Yii2", "Laravel"],`,
-          `  "open_to_work": true`,
+          `  "remote":       true`,
           '}',
         ],
       },
