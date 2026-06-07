@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="relative min-h-screen bg-[#0a0a0b] text-zinc-300 antialiased selection:bg-emerald-500/30">
       {/* живой фон: тех-паттерн + затемнение + свечение */}
-      <div aria-hidden className="pointer-events-none fixed inset-0 z-0 bg-[url('/bg.png')] bg-cover bg-center bg-fixed opacity-50" />
+      <div aria-hidden className="pointer-events-none fixed inset-0 z-0 bg-[url('/bg.png')] bg-cover bg-center bg-fixed opacity-30" />
       <div aria-hidden className="pointer-events-none fixed inset-0 z-0 bg-[#0a0a0b]/80" />
       <div aria-hidden className="pointer-events-none fixed inset-0 z-0 bg-glow" />
 
