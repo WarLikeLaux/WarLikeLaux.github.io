@@ -43,7 +43,6 @@ export default function Terminal({ stats }: { stats: Stats }) {
   const statsJson = useMemo(
     () => [
       '{',
-      `  "exp_it":  ${stats.yearsInIT},`,
       `  "exp_dev": ${stats.yearsInDev},`,
       `  "age":     ${stats.age},`,
       `  "stack":   ["PHP", "Yii2", "Laravel"],`,
