@@ -72,14 +72,24 @@ function App() {
               </a>
             ))}
           </nav>
-          <a
-            href="https://t.me/teagamesen"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md border border-emerald-500/40 px-3.5 py-1.5 font-mono text-xs text-emerald-400 transition-colors hover:bg-emerald-500/10"
-          >
-            telegram →
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://github.com/WarLikeLaux"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-zinc-700 px-3 py-1.5 font-mono text-xs text-zinc-300 transition-colors hover:border-zinc-500 hover:text-zinc-100"
+            >
+              github
+            </a>
+            <a
+              href="https://t.me/teagamesen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-emerald-500/40 px-3 py-1.5 font-mono text-xs text-emerald-400 transition-colors hover:bg-emerald-500/10"
+            >
+              telegram
+            </a>
+          </div>
         </div>
       </header>
 
